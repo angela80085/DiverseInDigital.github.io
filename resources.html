@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The grid: Three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+<link rel="stylesheet" href="/aZjeGjO4xsTtOg-y"/><link rel="stylesheet" href="/86B3cwa8PxAwXHfE"/></head>
+<body>
+<nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="community_stories.html">Community Stories</a></li>
+            <li><a href="discussions.html">Discussions</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+<div style="text-align:center">
+  <h2>Resources</h2>
+  <h5>Click to see the resources below:</h5>
+</div>
+
+<!-- Three columns -->
+<div class="row">
+  <div class="column" onclick="openTab('b1');" style="background:rgb(240, 157, 236);"> 
+  	🧠
+  </div>
+  <div class="column" onclick="openTab('b2');" style="background:rgb(135, 135, 243);">
+    💼
+  </div>
+  <div class="column" onclick="openTab('b3');" style="background:rgb(124, 233, 182);">
+    🌎
+  </div>
+</div>
+
+<!-- Full-width columns: (hidden by default) -->
+<div id="b1" class="containerTab" style="display:none;background:rgb(243, 186, 238)">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Mental Health Resources</h2>
+  <p>If you're currently experiencing burnout, hopelessness, or anxiety, please know that you don't have to face these feelings alone. Numerous mental health resources are available to you, catering to all budgets and preferences. Our carefully curated collection includes apps, books, YouTube videos, and other resources designed to help you feel better and regain a sense of control in your life. So, take the first step today and explore a range of public resources to find one that suits your needs best.</p>
+  <h5>Resource Suggestions:</h5>
+  <p> <a href="https://courses.therapyinanutshell.com/free-resources">Therapy in a Nutshell Resources</a> </p>
+  <p> <a href="https://www.youtube.com/@TherapyinaNutshell">Therapy in a Nutshell Youtube channel</a> </p>
+</div>
+
+<div id="b2" class="containerTab" style="display:none;background:rgb(102, 102, 226)">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Job and Internship Search Resources</h2>
+  <p>Searching for a job or internship? Here are valuable resources for your job search and internship journey. These include professionally-crafted resume templates, job search engines, internship sites, and interview preparation videos. These resources will help you excel in your next career chapter and achieve your goals.</p>
+  <p> <a href="https://www.extern.com/">Extern/ship Website</a> </p>
+  <p>  <a href="https://www.resume.com/"> Resume Wesbite</a> </p>
+</div>
+
+<div id="b3" class="containerTab" style="display:none;background:rgb(17, 201, 161)">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Community Resources</h2>
+  <p>These resources are for individuals in need of basic necessities such as food, housing, clothing, and transportation. If you are facing financial hardship, these resources can provide you with the assistance you require to make ends meet.</p>
+  <p> <a href="https://www.feedingamerica.org/find-your-local-foodbank">Feeding America</a> </p>
+  <p> <a href="https://www.hud.gov/topics/rental_assistance">HUD Rental Assistance</a> </p>
+  <p> <a href="https://www.usa.gov/emergency-housing-assistance">Housing Assistance</a> </p>
+</div>
+
+<script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+<div class="card">
+      <h3>Follow Us</h3>
+      <p>Instagram: @DiverseInDigital</p>
+    </div>
+  </div>
+</div>
+</body>
+</html> 
